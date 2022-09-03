@@ -77,7 +77,7 @@ function checkPasswordsMatch(input1, input2) {
 
 //  Get field name data attribute
 function getFieldName(input) {
-  return input.id.charAt(0).toUpperCase() + input.id.slice(1);
+  return input.parentElement.querySelector('label').textContent;
 }
 
 // Event Listeners
